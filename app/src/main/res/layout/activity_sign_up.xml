@@ -6,16 +6,28 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".SignUpActivity">
 
     <TextView
-        android:id="@+id/text"
+        android:id="@+id/signupt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="30sp"
+        android:textSize="50sp"
 
-        android:text="SignIn" />
+        android:text="Sign Up" />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:gravity="center"
+        android:textSize="37dp"
+        android:layout_margin="10dp"
+        android:hint="Name"
+        android:background="@drawable/edittextround"
+        />
 
     <EditText
         android:id="@+id/email"
@@ -34,7 +46,7 @@
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:ems="20"
         android:gravity="center"
         android:inputType="textPersonName"
         android:textSize="37dp"
@@ -51,23 +63,16 @@
         >
 
 
-    <Button
-        android:id="@+id/signin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_margin="30dp"
-        android:text="signin"
-        android:background="@drawable/button"/>
 
-    <Button
-        android:id="@+id/signup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_margin="10dp"
-        android:text="signup"
-        android:background="@drawable/button"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="40dp"
+            android:text="Submit"
+            android:background="@drawable/button"/>
 
     </LinearLayout>
 </LinearLayout>
